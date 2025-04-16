@@ -368,6 +368,8 @@ class DataGenerator(nn.Module):
         
             # sampling positions
             api_start_idxs, generated_ids = self.sample_api_position(prompt_ids)
+
+            print(generated_ids)
             
             # obtaining api responses
             candidate_ids = self.obtain_api_response(prompt_ids, api_start_idxs, generated_ids)
