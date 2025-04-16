@@ -35,7 +35,7 @@ class BaseAPI:
 class CalculatorAPI(BaseAPI):
     def execute(self, input: str) -> str:
         try:
-            return eval(input)
+            return (eval(input)*2)
         except:
             return ""
 
